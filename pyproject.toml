@@ -40,7 +40,7 @@ requires-python = ">=3.10"
 dependencies = [
     "pydantic>=2.0, <3.0",
 ]
-dynamic = ["version"]
+version = "1.0.0"
 
 [project.urls]
 Homepage = "https://github.com/boyu8266/tpdp"
