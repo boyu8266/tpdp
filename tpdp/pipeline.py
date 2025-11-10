@@ -1,18 +1,12 @@
-from __future__ import annotations  # Python < 3.10
+from __future__ import annotations
 
 import logging
 import sys
 import time
 from datetime import datetime
-from typing import Any, Callable, List, Optional
+from typing import Any, Callable, List, Optional, TypeGuard
 
-from pydantic import BaseModel, Field
-
-if sys.version_info >= (3, 10):
-    from typing import TypeGuard
-else:
-    # Use TypeGuard from typing_extensions for python <= 3.9
-    from typing_extensions import TypeGuard
+from pydantic import BaseModel, ConfigDict, Field
 
 
 #
@@ -53,11 +47,9 @@ class _LoggingMixin:
 class _BaseDataContainer(BaseModel):
     """A general class for each data container."""
 
-    class Config:
-        """Config for some data container."""
-
-        allow_population_by_field_name = True
-        smart_union = True
+    model_config = ConfigDict(
+        populate_by_name=True,
+    )
 
 
 class _TimeResultContainer(_BaseDataContainer):

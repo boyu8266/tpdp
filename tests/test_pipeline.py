@@ -10,7 +10,7 @@ def test_simple_state():
     state = MyState(state_name="my_state")
     assert_state(state)
 
-    assert state.dict() == {"state_name": "my_state"}
+    assert state.model_dump() == {"state_name": "my_state"}
 
 
 def test_invalid_state():
