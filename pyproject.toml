@@ -2,9 +2,6 @@
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-[tool.hatch.version]
-path = "tpdp/__version__.py"
-
 [project]
 name = "tpdp"
 description = "The Pipeline Design Pattern realization in python."
@@ -35,9 +32,9 @@ classifiers = [
 ]
 requires-python = ">=3.10"
 dependencies = [
-    "pydantic>=2.0",
+    "pydantic>=2.0, <3.0",
 ]
-dynamic = ["version"]
+version = "1.0.0"
 
 [project.urls]
 Homepage = "https://github.com/boyu8266/tpdp"
