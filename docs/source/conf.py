@@ -6,10 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'tpdp'
+project = 'tpdp-pydantic-v2'
 copyright = '2022-2023, Denis A. Artyushin'
 author = 'Denis A. Artyushin'
-version = '0.1.0'
+version = '1.0.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

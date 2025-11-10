@@ -40,9 +40,9 @@ dependencies = [
 dynamic = ["version"]
 
 [project.urls]
-Homepage = "https://github.com/denisart/tpdp"
+Homepage = "https://github.com/boyu8266/tpdp"
 Documentation = "https://denisart.github.io/tpdp"
-Source = "https://github.com/denisart/tpdp"
+Source = "https://github.com/boyu8266/tpdp"
 
 [project.optional-dependencies]
 # all requirements for linting, building and etc.
