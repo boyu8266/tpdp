@@ -5,6 +5,9 @@ build-backend = "hatchling.build"
 [tool.hatch.version]
 path = "tpdp/__version__.py"
 
+[tool.hatch.build.targets.wheel]
+packages = ["tpdp"]
+
 [project]
 name = "tpdp-pydantic-v2"
 description = "The Pipeline Design Pattern realization in python."
