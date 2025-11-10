@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "tpdp"
+name = "tpdp-pydantic-v2"
 description = "The Pipeline Design Pattern realization in python."
 readme = "README.md"
 authors = [
